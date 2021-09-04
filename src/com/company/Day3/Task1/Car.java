@@ -1,4 +1,4 @@
-package com.company.September1st.Task1;
+package com.company.Day3.Task1;
 
 public class Car extends Vehiche{
     private String brand;

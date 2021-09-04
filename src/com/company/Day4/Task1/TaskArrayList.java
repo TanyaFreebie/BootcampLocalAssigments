@@ -1,6 +1,4 @@
-package com.company.September2nd.Task1;
-
-import com.company.September2nd.SortedObject;
+package com.company.Day4.Task1;
 
 import java.util.ArrayList;
 import java.util.Arrays;

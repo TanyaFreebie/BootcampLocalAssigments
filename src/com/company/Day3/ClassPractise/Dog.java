@@ -1,4 +1,4 @@
-package com.company.September1st.ClassPractise;
+package com.company.Day3.ClassPractise;
 
 public class Dog extends Animal{
     private int tale;

@@ -1,4 +1,4 @@
-package com.company.September2nd;
+package com.company.Day4;
 
 public class SortedObject implements Comparable<SortedObject>{
     private int number;

@@ -1,13 +1,14 @@
 package com.company;
 
 
-import com.company.September2nd.CollectionClass;
-import com.company.September2nd.Task1.TaskArrayList;
+import com.company.Day5.BankAccount;
 
 public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        TaskArrayList.colors();
+        BankAccount bankAccount = new BankAccount("Andris", "Berzins", 700);
+        double balance = bankAccount.currencyDeposit(200, 0.84);
+        System.out.println(bankAccount.getBalance());
     }
 }

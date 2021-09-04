@@ -1,4 +1,4 @@
-package com.company.September2nd.Task2;
+package com.company.Day4.Task2;
 
 public class Person {
     //TODO 2

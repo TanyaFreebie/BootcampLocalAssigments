@@ -72,4 +72,5 @@ public class FirstPartBoolean {
         System.out.println((a> 100& b>100));
 
     }
+
 }

@@ -21,7 +21,12 @@ public class Car extends Vehiche{
     public String getBrand() {
         return brand;
     }
-private void engineSound(){
+    public String getColor() {
+        return color;
+    }
+
+
+    private void engineSound(){
     System.out.println("Whroom");
 }
     @Override
@@ -30,17 +35,43 @@ private void engineSound(){
         engineSound();
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public void engineStarts(boolean engineOn){
+        if(engineOn){
+            engineSound();
+        }else{
+            System.out.println("There is no sound. Please, turn engine ON to hear it");
+        }
+
+    }
+    public void turnLeft(){
+        System.out.println("Car turned left");
+    }
+    public void turnRight(){
+        System.out.println("Car turned right");
     }
 
-    public String getColor() {
-        return color;
+public int increaseSpeed(int speed){
+        if(speed == 0|| speed<215) {
+            speed+=5;
+            return speed;
+        } else if(speed>=220){
+            speed= 220;
+            System.out.println("You car can't go that fast!");
+        }
+        return speed;
+        }
+    public int decreaseSpeed(int speed){
+        if(speed == 0) {
+            System.out.println("Your car already stopped");
+            return speed;
+        } else if(speed <5){
+            speed = 0;
+            return speed;
+        } else{
+            speed -=5;
+        }
+        return speed;
     }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-
 }
+
+

@@ -1,4 +1,4 @@
-package com.company.Day4;
+package com.company.Day4.ClassPractise;
 
 import java.util.*;
 
@@ -43,7 +43,7 @@ public class CollectionClass {
         list.add(new SortedObject(2, "A"));
         list.add(new SortedObject(3, "B"));
         list.add(new SortedObject(1, "B"));
-        list.add(new SortedObject(2, "A"));
+        list.add(new SortedObject(2, "B"));
         list.add(new SortedObject(-1, "Z"));
 
         for(SortedObject item : list){

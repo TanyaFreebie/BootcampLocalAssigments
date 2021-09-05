@@ -1,4 +1,4 @@
-package com.company.Day4;
+package com.company.Day4.ClassPractise;
 
 import java.util.Comparator;
 

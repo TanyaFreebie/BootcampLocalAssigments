@@ -1,6 +1,6 @@
 package com.company.Day2.OOP;
 
-public class BankAccountTask2 {
+public class BankAccount {
     /*
     create a class "BankAccount" with property "balance" (should be decimal number)
     * create empty default constructor for it
@@ -33,4 +33,57 @@ public class BankAccountTask2 {
               than possible
 
      */
+    private double balance;
+
+    public BankAccount() {
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+    }
+
+    public double deposit(double amount) {
+        if (amount > 5000) {
+            System.out.println("Transaction cancelled. Max deposit - 5000 | Your deposit: 6000");
+        } else {
+            balance += amount;
+        }
+        return balance;
+    }
+
+    public double withdraw(double amount) {
+        if (amount > 4000) {
+            System.out.println("Transaction cancelled. Max withdraw - 4000| Your withdraw: " + amount
+                    + "\n Please contact your bank assistant for conformation");
+        } else if (balance - amount < 0) {
+            System.out.println("There is not enough funds.");
+        } else {
+            balance -= amount;
+        }
+        return balance;
+    }
+
+    public void printBalance() {
+        System.out.println("Account balance: " + balance);
+    }
+
+    public double transferTo(double amount) {
+
+        balance += amount;
+
+        return balance;
+    }
+
+    public double transferFrom(double amount) {
+        if (amount > 4000) {
+            System.out.println("Transaction cancelled. Your limit - 10000| Your transfer: " + amount
+                    + "\n Please contact your bank assistant for conformation");
+        } else if (balance - amount < 0) {
+            System.out.println("Transfer canceled. There is not enough funds.");
+        } else {
+            balance -= amount;
+        }
+        return balance;
+    }
+
 }

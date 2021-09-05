@@ -4,7 +4,6 @@ public class BankAccount {
     private String firstName;
     private String lastName;
     private double balance;
-    private double savingFund;
 
     public BankAccount(String firstName, String lastName, double balance) {
         this.firstName = firstName;

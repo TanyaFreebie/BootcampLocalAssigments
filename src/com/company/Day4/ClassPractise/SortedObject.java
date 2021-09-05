@@ -1,4 +1,4 @@
-package com.company.Day4;
+package com.company.Day4.ClassPractise;
 
 public class SortedObject implements Comparable<SortedObject>{
     private int number;

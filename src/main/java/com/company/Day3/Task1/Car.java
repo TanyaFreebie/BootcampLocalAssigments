@@ -61,7 +61,7 @@ public int increaseSpeed(int speed){
         return speed;
         }
     public int decreaseSpeed(int speed){
-        if(speed == 0) {
+        if(speed <= 0) {
             System.out.println("Your car already stopped");
             return speed;
         } else if(speed <5){
